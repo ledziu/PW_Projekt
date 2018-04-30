@@ -1,0 +1,12 @@
+C:\Users\mikol\source\repos\pw_projekt\InterFaces\bin\Debug\netstandard2.0\InterFaces.deps.json
+C:\Users\mikol\source\repos\pw_projekt\InterFaces\bin\Debug\netstandard2.0\InterFaces.dll
+C:\Users\mikol\source\repos\pw_projekt\InterFaces\bin\Debug\netstandard2.0\InterFaces.pdb
+C:\Users\mikol\source\repos\pw_projekt\InterFaces\bin\Debug\netstandard2.0\Core.dll
+C:\Users\mikol\source\repos\pw_projekt\InterFaces\bin\Debug\netstandard2.0\Core.pdb
+C:\Users\mikol\source\repos\pw_projekt\InterFaces\obj\Debug\netstandard2.0\InterFaces.csprojResolveAssemblyReference.cache
+C:\Users\mikol\source\repos\pw_projekt\InterFaces\obj\Debug\netstandard2.0\InterFaces.csproj.CoreCompileInputs.cache
+C:\Users\mikol\source\repos\pw_projekt\InterFaces\obj\Debug\netstandard2.0\InterFaces.AssemblyInfoInputs.cache
+C:\Users\mikol\source\repos\pw_projekt\InterFaces\obj\Debug\netstandard2.0\InterFaces.AssemblyInfo.cs
+C:\Users\mikol\source\repos\pw_projekt\InterFaces\obj\Debug\netstandard2.0\InterFaces.csproj.CopyComplete
+C:\Users\mikol\source\repos\pw_projekt\InterFaces\obj\Debug\netstandard2.0\InterFaces.dll
+C:\Users\mikol\source\repos\pw_projekt\InterFaces\obj\Debug\netstandard2.0\InterFaces.pdb

@@ -1,0 +1,9 @@
+C:\Users\mikol\source\repos\pw_projekt\CORE\bin\Debug\netstandard2.0\Core.deps.json
+C:\Users\mikol\source\repos\pw_projekt\CORE\bin\Debug\netstandard2.0\Core.dll
+C:\Users\mikol\source\repos\pw_projekt\CORE\bin\Debug\netstandard2.0\Core.pdb
+C:\Users\mikol\source\repos\pw_projekt\CORE\obj\Debug\netstandard2.0\Core.csprojResolveAssemblyReference.cache
+C:\Users\mikol\source\repos\pw_projekt\CORE\obj\Debug\netstandard2.0\Core.csproj.CoreCompileInputs.cache
+C:\Users\mikol\source\repos\pw_projekt\CORE\obj\Debug\netstandard2.0\Core.AssemblyInfoInputs.cache
+C:\Users\mikol\source\repos\pw_projekt\CORE\obj\Debug\netstandard2.0\Core.AssemblyInfo.cs
+C:\Users\mikol\source\repos\pw_projekt\CORE\obj\Debug\netstandard2.0\Core.dll
+C:\Users\mikol\source\repos\pw_projekt\CORE\obj\Debug\netstandard2.0\Core.pdb
