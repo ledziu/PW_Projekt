@@ -100,15 +100,13 @@ C:\Users\mikol\source\repos\pw_projekt\pw_projekt\bin\Debug\System.Xml.XmlDocume
 C:\Users\mikol\source\repos\pw_projekt\pw_projekt\bin\Debug\System.Xml.XmlSerializer.dll
 C:\Users\mikol\source\repos\pw_projekt\pw_projekt\bin\Debug\System.Xml.XPath.dll
 C:\Users\mikol\source\repos\pw_projekt\pw_projekt\bin\Debug\System.Xml.XPath.XDocument.dll
-C:\Users\mikol\source\repos\pw_projekt\pw_projekt\bin\Debug\BL.exe
 C:\Users\mikol\source\repos\pw_projekt\pw_projekt\bin\Debug\InterFaces.dll
-C:\Users\mikol\source\repos\pw_projekt\pw_projekt\bin\Debug\DAO.dll
 C:\Users\mikol\source\repos\pw_projekt\pw_projekt\bin\Debug\Core.dll
 C:\Users\mikol\source\repos\pw_projekt\pw_projekt\bin\Debug\BL.pdb
-C:\Users\mikol\source\repos\pw_projekt\pw_projekt\bin\Debug\BL.exe.config
 C:\Users\mikol\source\repos\pw_projekt\pw_projekt\bin\Debug\InterFaces.pdb
-C:\Users\mikol\source\repos\pw_projekt\pw_projekt\bin\Debug\DAO.pdb
 C:\Users\mikol\source\repos\pw_projekt\pw_projekt\bin\Debug\Core.pdb
 C:\Users\mikol\source\repos\pw_projekt\pw_projekt\obj\Debug\pw_projekt.csproj.CopyComplete
 C:\Users\mikol\source\repos\pw_projekt\pw_projekt\obj\Debug\pw_projekt.exe
 C:\Users\mikol\source\repos\pw_projekt\pw_projekt\obj\Debug\pw_projekt.pdb
+C:\Users\mikol\source\repos\pw_projekt\pw_projekt\bin\Debug\BL.dll
+C:\Users\mikol\source\repos\pw_projekt\pw_projekt\bin\Debug\BL.dll.config

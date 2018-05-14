@@ -4,6 +4,7 @@ using Sledz.Guitars.InterFaces;
 using Sledz.Guitars.BLogic;
 using System.Reflection;
 using System.IO;
+using System.Configuration;
 
 
 namespace Sledz.Guitars.ConsoleUi
@@ -13,7 +14,7 @@ namespace Sledz.Guitars.ConsoleUi
         static void Main(string[] args)
         {
             Menu();
-            IDAO bl = new Blogic();
+            IDAO bl = new Blogic(pw_projekt.Properties.Settings.Default.LibraryName);
 
 
             switch (Console.ReadKey().KeyChar)

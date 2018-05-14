@@ -1,8 +1,5 @@
 C:\Users\mikol\source\repos\pw_projekt\BL\obj\Debug\BL.csprojResolveAssemblyReference.cache
-C:\Users\mikol\source\repos\pw_projekt\BL\obj\Debug\BL.exe.config
 C:\Users\mikol\source\repos\pw_projekt\BL\obj\Debug\BL.csproj.CoreCompileInputs.cache
-C:\Users\mikol\source\repos\pw_projekt\BL\bin\Debug\BL.exe.config
-C:\Users\mikol\source\repos\pw_projekt\BL\bin\Debug\BL.exe
 C:\Users\mikol\source\repos\pw_projekt\BL\bin\Debug\BL.pdb
 C:\Users\mikol\source\repos\pw_projekt\BL\bin\Debug\Microsoft.Win32.Primitives.dll
 C:\Users\mikol\source\repos\pw_projekt\BL\bin\Debug\netstandard.dll
@@ -107,5 +104,9 @@ C:\Users\mikol\source\repos\pw_projekt\BL\bin\Debug\DAO.pdb
 C:\Users\mikol\source\repos\pw_projekt\BL\bin\Debug\InterFaces.pdb
 C:\Users\mikol\source\repos\pw_projekt\BL\bin\Debug\Core.pdb
 C:\Users\mikol\source\repos\pw_projekt\BL\obj\Debug\BL.csproj.CopyComplete
-C:\Users\mikol\source\repos\pw_projekt\BL\obj\Debug\BL.exe
 C:\Users\mikol\source\repos\pw_projekt\BL\obj\Debug\BL.pdb
+C:\Users\mikol\source\repos\pw_projekt\BL\bin\Debug\BL.dll.config
+C:\Users\mikol\source\repos\pw_projekt\BL\bin\Debug\BL.dll
+C:\Users\mikol\source\repos\pw_projekt\BL\obj\Debug\BL.dll
+C:\Users\mikol\source\repos\pw_projekt\BL\bin\Debug\DAO2.dll
+C:\Users\mikol\source\repos\pw_projekt\BL\bin\Debug\DAO2.pdb
