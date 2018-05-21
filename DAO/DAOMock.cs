@@ -23,14 +23,14 @@ namespace Sledz.Guitars.DAO
                 new Producer("Skervesen", CountryName.Poland, 3),
             };
             _guitars = new List<IGuitar> {
-                new Guitar(_producers.Find(x=>x.Name == "Gibson"),"Explorer"),
-                new Guitar(_producers.Find(x=>x.Name == "Gibson"),"SG"),
-                new Guitar(_producers.Find(x=>x.Name == "Gibson"),"V"),
-                new Guitar(_producers.Find(x=>x.Name == "Cort"),"Zenox"),
-                new Guitar(_producers.Find(x=>x.Name == "Fender"),"Telecaster"),
-                new Guitar(_producers.Find(x=>x.Name == "Ibanez"),"RG"),
-                new Guitar(_producers.Find(x=>x.Name == "Mayonez"),"Regius"),
-                new Guitar(_producers.Find(x=>x.Name == "Skervesen"),"4T"),
+                new Guitar(_producers.Find(x=>x.Name == "Gibson"),"Explorer",6),
+                new Guitar(_producers.Find(x=>x.Name == "Gibson"),"SG",6),
+                new Guitar(_producers.Find(x=>x.Name == "Gibson"),"V",6),
+                new Guitar(_producers.Find(x=>x.Name == "Cort"),"Zenox",6),
+                new Guitar(_producers.Find(x=>x.Name == "Fender"),"Telecaster",6),
+                new Guitar(_producers.Find(x=>x.Name == "Ibanez"),"RG",7),
+                new Guitar(_producers.Find(x=>x.Name == "Mayonez"),"Regius",7),
+                new Guitar(_producers.Find(x=>x.Name == "Skervesen"),"4T",7),
             };
         }
         public List<IGuitar> GetAllGuitars()

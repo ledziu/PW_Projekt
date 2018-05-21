@@ -5,8 +5,74 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Wpf"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
-    </Grid>
+        Title="MainWindow" Height="600" Width="800" Name="Window1">
+    <Window.Resources>
+
+    </Window.Resources>
+    <DockPanel Margin="0,0,0.4,0.4">
+        <TabControl>
+            <TabItem Header="Guitars">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <ListBox Name="GuitarsList" Grid.Row="0" Grid.Column="0" ItemsSource="{Binding ElementName=Window1, Path=list_guitars}">
+                        <ListBox.ItemTemplate>
+                            <DataTemplate>
+                                <StackPanel Orientation="Horizontal">
+                                    <Label Content="{Binding Producer.Name}"></Label>
+                                    <Label Content="{Binding Name}"></Label>
+                                </StackPanel>
+                            </DataTemplate>
+                        </ListBox.ItemTemplate>
+                    </ListBox>
+                    <StackPanel Grid.Row="0" Grid.Column="1">
+                        <StackPanel Orientation="Horizontal">
+                            <Label>Producer:</Label>
+                            <Label Content="{Binding ElementName=GuitarsList, Path=SelectedValue.Producer.Name}"></Label>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <Label>Model:</Label>
+                            <Label Content="{Binding ElementName=GuitarsList, Path=SelectedValue.Model}"></Label>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <Label>No. of Strings:</Label>
+                            <Label Content="{Binding ElementName=GuitarsList, Path=SelectedValue.Strings}"></Label>
+                        </StackPanel>
+                    </StackPanel>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Producers">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <ListBox Name="ProducersList" Grid.Row="0" Grid.Column="0" ItemsSource="{Binding ElementName=Window1, Path=list_producers}">
+                        <ListBox.ItemTemplate>
+                            <DataTemplate>
+                                <Label Content="{Binding Name}"></Label>
+                            </DataTemplate>
+                        </ListBox.ItemTemplate>
+                    </ListBox>
+                    <StackPanel Grid.Row="0" Grid.Column="1">
+                        <StackPanel Orientation="Horizontal">
+                            <Label>Producer:</Label>
+                            <Label Content="{Binding ElementName=ProducersList, Path=SelectedValue.Name}"></Label>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <Label>Country:</Label>
+                            <Label Content="{Binding ElementName=ProducersList, Path=SelectedValue.Country}"></Label>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <Label>Manufactures:</Label>
+                            <Label Content="{Binding ElementName=ProducersList, Path=SelectedValue.manufactures}"></Label>
+                        </StackPanel>
+                    </StackPanel>
+                </Grid>
+            </TabItem>
+        </TabControl>
+    </DockPanel>
+
 </Window>

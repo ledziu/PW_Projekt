@@ -15,6 +15,8 @@ using System.Windows.Shapes;
 using Sledz.Guitars.BLogic;
 using Sledz.Guitars.InterFaces;
 using System.Configuration;
+using System.Diagnostics;
+using System.IO;
 
 namespace Wpf
 {
@@ -23,19 +25,23 @@ namespace Wpf
     /// </summary>
     public partial class MainWindow : Window
     {
-        public List<IGuitar> list_guitars;
-        public List<IProducer> list_producers;
+        
+        private IDAO bl;
+        public List<IProducer> list_producers { set; get; }
+
+        public List<IGuitar> list_guitars { set; get; }
+       
         public MainWindow()
         {
+            bl = new Sledz.Guitars.BLogic.Blogic(Properties.Settings.Default.LibraryName);
+            list_guitars = bl.GetAllGuitars();
+            list_producers = bl.GetAllProducers();
             InitializeComponent();
-            IDAO bl = new Blogic(Properties.Settings.Default.LibraryName);
-           // list_guitars = bl.GetAllGuitars();
-           // list_producers = bl.GetAllProducers();
-
-
-
 
 
         }
+
+
+
     }
 }
