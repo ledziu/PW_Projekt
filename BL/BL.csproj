@@ -36,6 +36,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Annotations, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ComponentModel.Annotations.4.5.0\lib\net461\System.ComponentModel.Annotations.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -55,20 +59,13 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\DAO2\DAO2.csproj">
-      <Project>{5c5c6af6-14a9-456d-827a-04aeeb0abac1}</Project>
-      <Name>DAO2</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\DAO\DAO.csproj">
-      <Project>{9c1070a8-c4e0-4011-b83c-193bd1b7c1a1}</Project>
-      <Name>DAO</Name>
-    </ProjectReference>
     <ProjectReference Include="..\InterFaces\InterFaces.csproj">
       <Project>{01895874-81e1-436b-a8c9-491c6b722df5}</Project>
       <Name>InterFaces</Name>

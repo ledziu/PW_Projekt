@@ -1,0 +1,3 @@
+C:\Users\mikol\source\repos\pw_projekt\pw_projekt\obj\Release\pw_projekt.csprojResolveAssemblyReference.cache
+C:\Users\mikol\source\repos\pw_projekt\pw_projekt\obj\Release\pw_projekt.exe.config
+C:\Users\mikol\source\repos\pw_projekt\pw_projekt\obj\Release\pw_projekt.csproj.CoreCompileInputs.cache

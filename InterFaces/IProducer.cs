@@ -1,6 +1,8 @@
-﻿namespace Sledz.Guitars.InterFaces
+﻿using System;
+
+namespace Sledz.Guitars.InterFaces
 {
-    public interface IProducer
+    public interface IProducer : IEquatable<IProducer>
     {
         string Name
         {
@@ -13,7 +15,7 @@
             set;
             get;
         }
-        int manufactures
+        int Manufactures
         {
             set;
             get;

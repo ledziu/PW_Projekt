@@ -1,6 +1,8 @@
-﻿namespace Sledz.Guitars.InterFaces
+﻿using System;
+
+namespace Sledz.Guitars.InterFaces
 {
-    public interface IGuitar
+    public interface IGuitar : IEquatable<IGuitar>
     {
         Sledz.Guitars.InterFaces.IProducer Producer
         {
@@ -12,6 +14,15 @@
             set;
             get;
         }
-
+        int Strings
+        {
+            set;
+            get;
+        }
+        string Color
+        {
+            set;
+            get;
+        }
     }
 }

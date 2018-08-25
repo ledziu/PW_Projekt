@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using Sledz.Guitars.DAO;
 using Sledz.Guitars.InterFaces;
 using System.Reflection;
 using System.IO;
@@ -8,37 +7,11 @@ using System.Configuration;
 
 namespace Sledz.Guitars.BLogic
 {
-    public class Blogic : IDAO
+    public class Blogic //: IBL
     {
-        private IDAO _dao;
+        private static IDAO _dao;
 
-        /*public Blogic()
-        {
-            _dao = new DAOMock();
-            //DAO2\bin\Debug\netstandard2.0\DAO2.dll
-            //DAO\bin\Debug\netstandard2.0\DAO.dll
-
-           /* BL.Properties.Settings settings = new BL.Properties.Settings();
-            string dllpath = settings.DAOLocation;
-            string DAOClassname = settings.DAOClassName;
-            if (!dllpath.Contains(":"))
-            {
-                string directory = Directory.GetParent(@"../../../").FullName;
-                dllpath = Path.Combine(directory, dllpath);
-            }
-            try
-            {
-                Assembly dll = Assembly.LoadFile(dllpath);
-                System.Type type = dll.GetType(DAOClassname);
-                _dao = (IDAO)System.Activator.CreateInstance(type, new object[] { });
-            }
-            catch (System.Exception ex)
-            {
-                System.Console.WriteLine(ex.Message);
-                throw;
-            }
-
-        }*/
+       
         public Blogic(string DaoName)
         {
             try
@@ -58,9 +31,8 @@ namespace Sledz.Guitars.BLogic
                 }
                 ConstructorInfo constructorInfo = type.GetConstructor(new System.Type[] { });
                 _dao = (IDAO)constructorInfo.Invoke(new System.Type[] { });
-                
 
-            }
+            } 
             catch(System.Exception ex)
             {
                 System.Console.WriteLine(ex.Message);
@@ -68,16 +40,71 @@ namespace Sledz.Guitars.BLogic
         }
 
 
-        public List<IGuitar> GetAllGuitars()
+        public static List<IGuitar> GetAllGuitars()
         {
-            return _dao.GetAllGuitars();
+            if (_dao != null)
+            {
+                return _dao.GetAllGuitars();
+            }
+            return new List<IGuitar>();
         }
-        public List<IProducer> GetAllProducers()
+        public static List<IProducer> GetAllProducers()
         {
-            return _dao.GetAllProducers();
+            if (_dao != null)
+            {
+                return _dao.GetAllProducers();
+            }
+            return new List<IProducer>();
+        }
+        
+        
+
+        public static bool AddGuitar(string producent, string model, string strings, string color)
+        {
+            return _dao.AddGuitar(producent, model, strings, color);
+
+        }
+        public static bool DeleteGuitar(string producent, string model, string strings)
+        {
+            return _dao.DeleteGuitar(producent, model, strings);
+        }
+        public static bool AddProducer(string producer, string country, string manufactures)
+        {
+            return _dao.AddProducer(producer, country, manufactures);
         }
 
-        static void Main(string[] args) { }
-
+        public static bool AddGuitar(IGuitar guitar)
+        {
+            return _dao.AddGuitar(guitar);
+        }
+        public static bool AddProducer(IProducer producer)
+        {
+            return _dao.AddProducer(producer);
+        }
+        public static bool DeleteGuitar(IGuitar guitar)
+        {
+            return _dao.DeleteGuitar(guitar);
+        }
+        public static bool DeleteProducer(IProducer producer)
+        {
+            return _dao.DeleteProducer(producer);
+        }
+        public static bool UpdateGuitar(IGuitar guitar)
+        {
+            return _dao.UpdateGuitar(guitar);
+        }
+        public static bool UpdateProducer(IProducer producer)
+        {
+            return _dao.UpdateProducer(producer);
+        }
+        public static IGuitar NewGuitar()
+        {
+            return _dao.NewGuitar();
+        }
+        public static IProducer NewProducer()
+        {
+            return _dao.NewProducer();
+        }
+        
     }
 }

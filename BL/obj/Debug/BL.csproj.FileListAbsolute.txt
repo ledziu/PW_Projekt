@@ -97,10 +97,8 @@ C:\Users\mikol\source\repos\pw_projekt\BL\bin\Debug\System.Xml.XmlDocument.dll
 C:\Users\mikol\source\repos\pw_projekt\BL\bin\Debug\System.Xml.XmlSerializer.dll
 C:\Users\mikol\source\repos\pw_projekt\BL\bin\Debug\System.Xml.XPath.dll
 C:\Users\mikol\source\repos\pw_projekt\BL\bin\Debug\System.Xml.XPath.XDocument.dll
-C:\Users\mikol\source\repos\pw_projekt\BL\bin\Debug\DAO.dll
 C:\Users\mikol\source\repos\pw_projekt\BL\bin\Debug\InterFaces.dll
 C:\Users\mikol\source\repos\pw_projekt\BL\bin\Debug\Core.dll
-C:\Users\mikol\source\repos\pw_projekt\BL\bin\Debug\DAO.pdb
 C:\Users\mikol\source\repos\pw_projekt\BL\bin\Debug\InterFaces.pdb
 C:\Users\mikol\source\repos\pw_projekt\BL\bin\Debug\Core.pdb
 C:\Users\mikol\source\repos\pw_projekt\BL\obj\Debug\BL.csproj.CopyComplete
@@ -108,5 +106,4 @@ C:\Users\mikol\source\repos\pw_projekt\BL\obj\Debug\BL.pdb
 C:\Users\mikol\source\repos\pw_projekt\BL\bin\Debug\BL.dll.config
 C:\Users\mikol\source\repos\pw_projekt\BL\bin\Debug\BL.dll
 C:\Users\mikol\source\repos\pw_projekt\BL\obj\Debug\BL.dll
-C:\Users\mikol\source\repos\pw_projekt\BL\bin\Debug\DAO2.dll
-C:\Users\mikol\source\repos\pw_projekt\BL\bin\Debug\DAO2.pdb
+C:\Users\mikol\source\repos\pw_projekt\BL\bin\Debug\System.ComponentModel.Annotations.dll

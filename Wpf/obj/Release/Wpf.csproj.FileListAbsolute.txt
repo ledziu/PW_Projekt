@@ -1,0 +1,12 @@
+C:\Users\mikol\source\repos\pw_projekt\Wpf\obj\Release\Wpf.csprojResolveAssemblyReference.cache
+C:\Users\mikol\source\repos\pw_projekt\Wpf\obj\Release\Wpf.exe.config
+C:\Users\mikol\source\repos\pw_projekt\Wpf\obj\Release\MainWindow.baml
+C:\Users\mikol\source\repos\pw_projekt\Wpf\obj\Release\MainWindow.g.cs
+C:\Users\mikol\source\repos\pw_projekt\Wpf\obj\Release\App.g.cs
+C:\Users\mikol\source\repos\pw_projekt\Wpf\obj\Release\Wpf_MarkupCompile.cache
+C:\Users\mikol\source\repos\pw_projekt\Wpf\obj\Release\Wpf.g.resources
+C:\Users\mikol\source\repos\pw_projekt\Wpf\obj\Release\Sledz.Guitars.Wpf.Properties.Resources.resources
+C:\Users\mikol\source\repos\pw_projekt\Wpf\obj\Release\Wpf.csproj.GenerateResource.cache
+C:\Users\mikol\source\repos\pw_projekt\Wpf\obj\Release\Wpf.csproj.CoreCompileInputs.cache
+C:\Users\mikol\source\repos\pw_projekt\Wpf\obj\Release\GeneratedInternalTypeHelper.g.cs
+C:\Users\mikol\source\repos\pw_projekt\Wpf\obj\Release\Wpf_MarkupCompile.lref

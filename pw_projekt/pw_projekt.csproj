@@ -95,4 +95,9 @@
     </BootstrapperPackage>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>copy /Y "$(SolutionDir)\DAO\bin\Debug\netstandard2.0\DAO.dll" "$(TargetDir)\DAO.dll"
+
+copy /Y "$(SolutionDir)\DAO2\bin\Debug\netstandard2.0\DAO2.dll" "$(TargetDir)\DAO2.dll"</PreBuildEvent>
+  </PropertyGroup>
 </Project>

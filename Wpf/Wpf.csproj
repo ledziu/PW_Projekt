@@ -6,7 +6,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{05163558-3760-4530-A6CB-6F39B80BF416}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>Wpf</RootNamespace>
+    <RootNamespace>Sledz.Guitars.Wpf</RootNamespace>
     <AssemblyName>Wpf</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
@@ -35,6 +35,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Annotations, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ComponentModel.Annotations.4.5.0\lib\net461\System.ComponentModel.Annotations.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
@@ -85,6 +89,7 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -98,10 +103,23 @@
       <Project>{3873f7ef-f422-47bb-b860-d3b2b8c0cca1}</Project>
       <Name>BL</Name>
     </ProjectReference>
+    <ProjectReference Include="..\CORE\Core.csproj">
+      <Project>{6bb071e0-6784-4a44-b95a-871b1284bd7f}</Project>
+      <Name>Core</Name>
+    </ProjectReference>
     <ProjectReference Include="..\InterFaces\InterFaces.csproj">
       <Project>{01895874-81e1-436b-a8c9-491c6b722df5}</Project>
       <Name>InterFaces</Name>
     </ProjectReference>
+    <ProjectReference Include="..\ViewModel\ViewModels.csproj">
+      <Project>{1524c865-fea0-4eac-8afc-17b1b7d6b0dc}</Project>
+      <Name>ViewModels</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>copy /Y "$(SolutionDir)\DAO\bin\Debug\netstandard2.0\DAO.dll" "$(TargetDir)\DAO.dll"
+
+copy /Y "$(SolutionDir)\DAO2\bin\Debug\netstandard2.0\DAO2.dll" "$(TargetDir)\DAO2.dll"</PreBuildEvent>
+  </PropertyGroup>
 </Project>

@@ -17,8 +17,9 @@ using Sledz.Guitars.InterFaces;
 using System.Configuration;
 using System.Diagnostics;
 using System.IO;
+using Sledz.Guitars.Core;
 
-namespace Wpf
+namespace Sledz.Guitars.Wpf
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -26,22 +27,19 @@ namespace Wpf
     public partial class MainWindow : Window
     {
         
-        private IDAO bl;
-        public List<IProducer> list_producers { set; get; }
-
-        public List<IGuitar> list_guitars { set; get; }
        
         public MainWindow()
         {
-            bl = new Sledz.Guitars.BLogic.Blogic(Properties.Settings.Default.LibraryName);
-            list_guitars = bl.GetAllGuitars();
-            list_producers = bl.GetAllProducers();
+            Sledz.Guitars.BLogic.Blogic  bl = new Sledz.Guitars.BLogic.Blogic(Sledz.Guitars.Wpf.Properties.Settings.Default.LibraryName);
+            
             InitializeComponent();
-
+            
 
         }
 
+       
 
 
+        
     }
 }

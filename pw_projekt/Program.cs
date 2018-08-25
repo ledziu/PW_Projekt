@@ -14,8 +14,8 @@ namespace Sledz.Guitars.ConsoleUi
         static void Main(string[] args)
         {
             Menu();
-            IDAO bl = new Blogic(pw_projekt.Properties.Settings.Default.LibraryName);
-
+           /* Blogic bl = new Blogic(pw_projekt.Properties.Settings.Default.LibraryName);
+           
 
             switch (Console.ReadKey().KeyChar)
             {
@@ -31,7 +31,7 @@ namespace Sledz.Guitars.ConsoleUi
                 default:
                     Console.WriteLine("Wrong number");
                     break;
-            }
+            }*/
         }
         static private void Menu()
         {
