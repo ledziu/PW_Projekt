@@ -72,7 +72,7 @@ namespace Sledz.Guitars.Wpf.ViewModels
         {
             if (BLogic.Blogic.AddGuitar(AddedGuitar.GetGuitar()))
             {
-                Guitars.Add(EditedGuitar);
+                Guitars.Add(AddedGuitar);
                 AddedGuitar = new GuitarViewModel(Blogic.NewGuitar());
                 MessageBox.Show("New guitar", "New guitar");
                 AddedGuitar.Validate();
@@ -92,7 +92,6 @@ namespace Sledz.Guitars.Wpf.ViewModels
         {
             get => _deleteGuitarCommand;
         }
-        public ListCollectionView View { get => _view; set => _view = value; }
 
         private void DeleteGuitar()
         {
@@ -105,8 +104,10 @@ namespace Sledz.Guitars.Wpf.ViewModels
                     if (BLogic.Blogic.DeleteGuitar(SelectedGuitar.GetGuitar()))
                     {
                         Guitars.Remove(SelectedGuitar);
+                        SelectedGuitar = new GuitarViewModel(Blogic.NewGuitar());
+                        
                     }
-                    SelectedGuitar = new GuitarViewModel(Blogic.NewGuitar());
+                    
                 }
             }
         }

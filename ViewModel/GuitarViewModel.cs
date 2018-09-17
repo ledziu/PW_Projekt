@@ -44,7 +44,7 @@ namespace Sledz.Guitars.Wpf.ViewModels
             }
         }
         [Required(ErrorMessage = "Guitar must have strings")]
-        [Range(0,int.MaxValue,ErrorMessage ="Guitar must have strings")]
+        [Range(4,int.MaxValue,ErrorMessage ="Guitar must have strings")]
         public int Strings
         {
             get => _guitar.Strings;

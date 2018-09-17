@@ -133,7 +133,10 @@ namespace Sledz.Guitars.DAO
             return false;
         }
 
-        public IGuitar NewGuitar() => new Guitar();
+        public IGuitar NewGuitar()
+        {
+            return new Guitar();
+        }
         public IProducer NewProducer() => new Producer();
 
         public bool UpdateGuitar(IProducer producer, string model, int strings, string color) {

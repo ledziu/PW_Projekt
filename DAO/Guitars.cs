@@ -32,12 +32,14 @@ namespace Sledz.Guitars.DAO
             get => _color;
             set => _color = value;
         }
-        public Guitar() { }
+        public Guitar() {
+            Strings = 6;
+        }
         public Guitar(InterFaces.IProducer _producer, string _model)
         {
             Producer = _producer;
             Model = _model;
-            Strings = 0;
+            Strings = 6;
             Color = "Black";
         }
         public Guitar(InterFaces.IProducer _producer, string _model, int _strings)

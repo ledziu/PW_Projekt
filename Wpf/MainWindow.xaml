@@ -200,7 +200,7 @@
                             <Label Grid.Row="1" Grid.Column="0" Margin="6">Country:</Label>
                             <ComboBox Grid.Row="1" Grid.Column="1" VerticalContentAlignment="Center" Margin="6" ItemsSource="{Binding Source={StaticResource ProducerListViewModel}, Path=countryNames}" SelectedItem="{Binding Country}"></ComboBox>
 
-                            <Label Grid.Row="2" Grid.Column="0" Margin="6">Employment:</Label>
+                            <Label Grid.Row="2" Grid.Column="0" Margin="6">Manufactures:</Label>
                             <TextBox Grid.Row="2" Grid.Column="1" VerticalContentAlignment="Center" Margin="6 0 0 40" Text="{Binding Manufactures}"></TextBox>
 
                         </Grid>

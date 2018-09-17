@@ -97,9 +97,15 @@ namespace Sledz.Guitars.Wpf.ViewModels
                     {
                         ProducersSelectList.Remove(SelectedProducer.GetProducer());
                         Producers.Remove(SelectedProducer);
+                        SelectedProducer = new ProducerViewModel(BLogic.Blogic.NewProducer());
                     }
-                    SelectedProducer = new ProducerViewModel(BLogic.Blogic.NewProducer());
+                    else
+                    {
+                        MessageBox.Show("Error", "Can't delete producer with existing guitars");
+                    }
+                    
                 }
+                
             }
         }
        
